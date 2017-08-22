@@ -1,0 +1,10 @@
+galaxy_info:
+  author: Andrew J Krug
+  description: LUA Resty OpenID Connect module with sample nginx.
+  company: Mozilla
+
+  license: MPL2.0
+
+  min_ansible_container_version: 0.9.1
+
+  tags: []

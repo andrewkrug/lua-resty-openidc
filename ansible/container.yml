@@ -1,0 +1,18 @@
+version: "2"
+settings:
+  volumes:
+    ../:/source
+  conductor_base: centos:7
+services:
+  auth_proxy:
+    from: centos:7
+    expose:
+      - "8000/tcp"
+    ports:
+      - "8000:8000"
+    roles:
+      - resty-openidc
+      # - nginx
+    command: ['/usr/bin/dumb-init', '/usr/bin/start.sh']
+
+registries: {}
